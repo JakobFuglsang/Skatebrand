@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/master.css">
+        <title> SkateBrand.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        <header>
+        <ul>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://youtube.com">Youtube</a></li>
+            <li><a href="https://instagram.com">Instagram</a></li>
+            <li><a href="https://snapchat.com">Snapchat</a></li>
+            <div class="cart">
+            <li><a href="shoppingcart"><i class="material-icons">shopping_cart</i></a></li>
+                </div>
+                <div class="login">
+            <li><i class="material-icons">person</i></li>
+            <li><a href="LOGIN">LOGIN</a></li>
+                </div>
+            <form class="search">
+            <input type="search" placeholder="Search">
+            <input type="submit" value="." id="send">
+            </form>
+        </ul>
+        </header>
+        
+        <nav>
+            <center>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop">Shop</a></li>
+                <li><a href="video">Videos</a></li>
+                <a href="index.html"><h1> SKATEBRAND</h1></a>
+                <li><a href="team">Team</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+            </center>
+        </nav>
+        
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/shane-oneill_Banner.png" style="width:100%">
+  <div class="text">Shane o'neill - Giant front board</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="images/shane-oneill_Banner.png" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="images/shane-oneill_Banner.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+        <div class="board">
+            <div class="bgcolor">
+                <h1>Shop our boards</h1>
+                    <a href="shop">
+                        <div class="button">
+                            <h2> Go to shop</h2>
+                        </div>
+                    </a>
+            </div>
+        </div>
+        <div class="clothes">
+            <div class="bgcolor">
+                <h1>Shop our Clothes</h1>
+                    <a href="shop">
+                        <div class="button">
+                            <h2> Go to shop</h2>
+                        </div>
+                    </a>
+            </div>
+        </div>
+        
+
+    </body>
+    
+    <footer>
+        <center>
+        <div class="row 1">
+            <h3>About us</h3>
+            <hr class="footerline">
+            <p> Lorem ipsum dolor sit amet, vel rutrum elit ac vestibulum metus. Eros quisque quisque varius duis at, sit cursus velit ultrices etiam, lacus cras ac libero tincidunt nullam. Aenean consequat quam lorem fringilla sit, tellus in, integer turpis dui mauris ridiculus elit, mi proin enim curae ut tincidunt mollis, eros metus fringilla mattis.</p>
+        </div>
+        
+        <div class="row 2">
+            <h3> Links</h3>
+            <hr class="footerline">
+            <a href="index.html" id="top">Home</a> <br>
+            <a href="shop">Shop</a> <br>
+            <a href="team">Team</a> <br>
+            <a href="contact">contact</a>
+        </div>
+        
+        <div class="row treep">
+            <h3> Contact details</h3>
+            <hr class="footerline">
+            <p> Adress - Somewhere</p>
+            <p> PO box - Adress to PO</p>
+            <p> Phone  - 123-456-7890</p>
+            <p> Email  - SKATEBRAND@BRAND.com</p>
+        </div>
+        </center>
+    </footer>
+</html>
