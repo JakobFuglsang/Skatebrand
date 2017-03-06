@@ -35,7 +35,8 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #dc3737;
+    color: #dc3737 !important;
+    text-decoration: none !important;
 }
 
 .material-icons {
@@ -61,6 +62,7 @@ ul li a:hover {
 
 .login:hover li a {
     color: #dc3737;
+    
 }
 
 .cart {
@@ -192,7 +194,8 @@ hr.footerline {
 }
 
 .row a:hover {
-    color: #dc3737;
+    color: #dc3737 !important;
+    text-decoration: none !important;
 }
 
 .row.treep p {
@@ -334,7 +337,7 @@ top: 0px;
 }
 
 .bgcolor a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: whitesmoke;
 }
 
