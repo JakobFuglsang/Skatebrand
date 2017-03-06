@@ -359,4 +359,42 @@ top: 0px;
     margin: 0;
 }
 
+.carousel {
+    margin-bottom: 0;
+    padding: 0;;
+    top: 20px !important;
+    margin-top: 50%;
+}
+/* The controlsy */
+.carousel-control {
+    height: 40px;
+    width: 30px !important;
+    border: 4px solid #FFFFFF;
+    margin-top: 9%;
+    position: relative;
 
+}
+
+/* The indicators */
+.carousel-indicators li {
+    position: relative;
+    top: 55px;
+    border: 0;
+}
+
+/* The colour of the indicators */
+.carousel-indicators li {
+	background: #dc3737;
+}
+
+.carousel-indicators:focus {
+background-color: #ac1818;
+}
+
+.carousel-indicators .active {
+    background-color: #ac1818 !important;
+}
+
+a {
+    color: whitesmoke !important;
+}
