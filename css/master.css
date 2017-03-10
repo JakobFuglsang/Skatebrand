@@ -39,6 +39,13 @@ ul li a:hover {
     text-decoration: none !important;
 }
 
+ul li a#active {
+    color: #dc3737 !important;
+    border-bottom: 3px solid #dc3737;
+    padding-bottom: 39px;
+    
+}
+
 .material-icons {
     color: whitesmoke;
     vertical-align: bottom;
@@ -113,6 +120,7 @@ nav ul li:hover {
     border-bottom: 3px solid #dc3737;
     padding-bottom: 37px;
 }
+
 form.search {
     display: inline-block;
     float: right;
@@ -121,8 +129,11 @@ form.search {
 }
 form.search input#send {
     width: 25px;
+    height: 30px;
     border: none;
     font-size: 12px;
+    position: relative;
+    bottom: 2px;
     background-color: whitesmoke;
     background-image: url('../images/search.png'); 
     background-repeat: no-repeat;
@@ -219,6 +230,7 @@ top: 0px;
 .prev, .next {
   cursor: pointer;
   position: absolute;
+  text-decoration: none;
   top: 45%;
   width: auto;
   padding: 16px;
@@ -239,6 +251,7 @@ top: 0px;
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(220,55,55,0.8);
+    text-decoration: none;
 }
 
 /* Caption text */
@@ -423,12 +436,135 @@ input#email {
     display: inline-block;
 }
 
-input#submit {
+input.submit {
     color: white;
     background-color: #212121;
     transition: .3s;
 }
 
-input#submit:hover {
+input.submit:hover {
     background-color: black;
+}
+
+.form {
+    text-align: center;
+}
+
+.form form label {
+    font-size: 25px;
+    margin: 25px 0 0 0;
+}
+
+.form form input {
+    width: 50%;
+    border: solid #EEE 2px;
+    transition: 1s;
+}
+
+.form form input:hover {
+    border: solid #333 2px;
+}
+
+.form form input:focus {
+    border: solid #333 2px;
+    width: 75%;
+}
+
+.form form textarea {
+    resize: none;
+    background-color: whitesmoke;
+    color: #212121;
+    border: solid #EEE 2px;
+    margin-bottom: 25px;
+    outline: none;
+    width: 50%;
+    height: 75px;
+    transition: 1s;
+}
+
+.form form textarea:hover {
+    border: solid #333 2px;
+}
+
+.form form textarea:focus {
+    border: solid #333 2px;
+    width: 75%;
+}
+
+.form form input.submit {
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+    color: black;
+    transition: 1s;
+}
+
+
+.loginform label {
+    font-size: 35px;
+    margin: 25px 0 0 0;
+}
+
+.loginform {
+    text-align: center;
+    margin: 0 0 10% 0;
+}
+
+.loginform input {
+    background-color: whitesmoke;
+    border: solid #EEE 2px;
+    color: black;
+    width: 25%;
+    transition: 1s;
+}
+
+.loginform input:hover {
+    border: solid #333 2px;
+}
+
+.loginform input:focus {
+    border: solid #333 2px;
+    width: 35%;
+}
+
+.loginform input#loginsubmit {
+    margin-top: 25px;
+}
+
+.loginform input#loginsubmit:hover {
+    background-color: whitesmoke;
+}
+
+.loginform input#remember:focus {
+    width: 1%;
+}
+
+.loginform input#remember {
+    display: inline-block;
+    width: 1%;
+    vertical-align: middle;
+}
+
+.loginform p {
+    display: inline-block;
+    vertical-align: sub;
+}
+
+.registerbox {
+    background-color: #dc3737;
+    margin: 0;
+    height: 50px;
+}
+
+.registerbox a {
+    margin: 0;
+    padding: 7px 0 7px 60px;
+    display: block;
+    font-family: helvetica, arial;
+    font-size: 25px;
+    transition: 1s;
+}
+
+.registerbox a:hover {
+    text-decoration: none;
+    background-color: #ac1818;
 }
